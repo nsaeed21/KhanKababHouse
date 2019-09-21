@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { padding: 59px 0; position: fixed; top: 0; left: 0; width: 100%; color: $c-white; z-index: 10; transition: background .3s, padding .3s; }
+.header .shell { padding-left: 73px; }
+.header .logo { text-decoration: none; display: none; margin-left: 30px; letter-spacing: 0.022em; }
+
+.header--fixed { padding: 17px 0 12px; background: rgba(0, 0, 0, .8) }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.header { padding: 25px 0; }
+	.header .shell { padding: 0 25px; }
+	.header .header__inner { display: flex; align-items: center; }
+	.header .logo { display: block; }
+
+	.header--fixed { padding: 13px 0; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile-portrait {
+	.header { padding: 14px 0; }
+	.header .shell { padding: 0 15px; }
+	.header .logo { font-size: 14px; margin-left: 22px; }
+}

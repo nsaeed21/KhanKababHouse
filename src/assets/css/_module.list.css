@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+div[class^='list-'] ul,
+ul[class^='list-'] { list-style-type: none; }
+
+/* ------------------------------------------------------------ *\
+	List menu
+\* ------------------------------------------------------------ */
+
+.list-menu {  }
+.list-menu .list__item { margin-bottom: 30px; min-width: 393px; max-width: 393px; flex: 0 0 393px; justify-content: flex-start; }
+.list-menu .list__item:last-child { margin-bottom: 0; }
+
+/* Mobile */
+
+$breakpoint-mobile-portrait {
+	.list-menu .list__item { margin-bottom: 23px; }
+}
+
+/* ------------------------------------------------------------ *\
+	List Accordions
+\* ------------------------------------------------------------ */
+
+.list-accordions > .list__item { display: flex; justify-content: center; }
+
+.list-accordions > .list__item .accordion { flex: 0 1 100%; max-width: 100%; }
+.list-accordions > .list__item--secondary .accordion { flex: 0 1 44%; max-width: 44%; }
+
+.list-accordions > .list__item--secondary .accordion:nth-child(1) .accordion__head { left: -28px; }
+.list-accordions > .list__item--secondary .accordion:nth-child(2) .accordion__head { right: -33px; }
+
+.list-accordions > .list__item--secondary .accordion__body { padding: 46px 0 50px; }
+
+@media(max-width: 900px){
+	.list-accordions > .list__item--secondary .accordion:nth-child(1) .accordion__head { left: auto; }
+	.list-accordions > .list__item--secondary .accordion:nth-child(2) .accordion__head { right: auto; }
+
+	.list-accordions > .list__item { flex-wrap: wrap; }
+	.list-accordions > .list__item .accordion { border-bottom: 1px solid $c-white; }
+	.list-accordions > .list__item:last-child .accordion:last-child { border-bottom: 0; }
+
+	.list-accordions > .list__item--secondary .accordion { flex: 0 1 100%; max-width: 100%; }
+	
+}
+
+/* Mobile */
+
+$breakpoint-mobile-portrait {
+	.list-accordions > .list__item--secondary .accordion__body { padding: 21px 0 35px; }
+}

@@ -1,0 +1,8 @@
+/* ------------------------------------------------------------ *\
+	Credits
+\* ------------------------------------------------------------ */
+
+.credits { font-size: 10px; }
+
+.credits a { text-decoration: none; }
+.credits a:hover { text-decoration: underline; }

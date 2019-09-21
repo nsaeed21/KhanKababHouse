@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { padding-bottom: 65.2%; background-size: cover; background-position: center center; position: relative; z-index: 1; }
+.intro:before { position: absolute; content: '';  top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .6); z-index: -1; }
+
+.intro .intro__content { position: absolute; max-width: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: $c-white; text-align: center; transition: opacity .3s, visibility .3s; opacity: 0; visibility: hidden; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.intro .intro__content { opacity: 1; visibility: visible; }
+	.intro .intro__content h1 { font-size: 40px; font-size: 5vw; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile-portrait {
+	.intro { padding-bottom: 70%; }
+	.intro .intro__content { max-width: initial; width: 70%; margin-top: 8px; }
+	.intro .intro__content h1 { font-size: 20px; font-size: 6vw; line-height: 1.5; }
+}

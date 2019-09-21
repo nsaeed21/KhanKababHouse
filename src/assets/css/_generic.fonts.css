@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+/*font-family: 'Source Sans Pro', sans-serif;*/
+
+/*@font-face {
+    font-family: 'Futura LT';
+    src: url('../fonts/FuturaLT/FuturaLT.woff2') format('woff2'),
+        url('../fonts/FuturaLT/FuturaLT.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}*/
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura/Futura-Medium.woff2') format('woff2'),
+        url('../fonts/Futura/Futura-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

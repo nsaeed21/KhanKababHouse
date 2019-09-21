@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ *\
+	Section Text
+\* ------------------------------------------------------------ */
+
+.section-text { padding: 50px 0 65px; text-align: center; border-bottom: 1px solid $c-black; }
+
+.section-text .section__head { margin-bottom: 24px; }
+
+.section-text .section__body { max-width: 780px; margin: 0 auto; }
+
+.section-text--secondary { padding: 30px 0 50px; border-top: 1px solid $c-black; }
+.section-text--secondary address p { margin-bottom: 0; }
+.section-text--secondary address br { display: none; }
+
+.section-text + .section-text { border-top: 0; padding: 21px 0 48px; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section-text { padding: 30px 0; }
+}
+
+$breakpoint-mobile-portrait {
+	.section-text { padding: 19px 0 26px; }
+	.section-text .section__head { margin-bottom: 12px; }
+	.section-text .section__body { max-width: 89%; letter-spacing: 0.01em; }
+
+	.section-text--secondary { padding: 16px 0 20px; }
+	.section-text--secondary .section__head { margin-bottom: 19px; }
+	.section-text--secondary .section__body { max-width: 81%; }
+	.section-text--secondary address br { display: block; }
+	.section-text--secondary address p { margin-bottom: 17px; }
+
+	.section-text + .section-text { border-top: 0; padding: 15px 0 11px; }
+}
+
+/* ------------------------------------------------------------ *\
+	Section Menu
+\* ------------------------------------------------------------ */
+
+.section-menu .section__head { text-align: center; padding: 34px 0; }
+.section-menu .shell { padding: 0; }
+
+
+/* Mobile */
+
+$breakpoint-mobile-portrait {
+	.section-menu .section__head { padding: 13px 0 22px; }
+	.section-menu { margin-bottom: 27px; }
+
+}
+
+/* ------------------------------------------------------------ *\
+	Section Contact
+\* ------------------------------------------------------------ */
+
+.section-contact .section__head { margin-bottom: 15px; }

@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+
+.accordion .accordion__head { background: $c-green; color: $c-white; text-align: center; padding: 14px 0 20px; position: relative; transition: background .3s, color .3s; }
+.accordion .accordion__head:before { position: absolute; content: ''; left: -50vw; right: -50vw; top: 0; background: $c-green; height: 100%; z-index: -1; }
+.accordion .accordion__head h4 { margin-bottom: 0; }
+
+.accordion .accordion__head-aside { position: absolute; top: 16px; right: 27px; width: 20px; height: 20px; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s;}
+.accordion .accordion__head-aside .ico { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); transition: opacity .3s, visibility .3s; }
+.accordion .accordion__head-aside .ico-close { visibility: hidden; opacity: 0; }
+
+.accordion .accordion__body { padding: 41px 0 61px; display: flex; justify-content: center; flex-wrap: wrap; }
+.accordion .accordion__body-entry { flex: 0 0 100%; max-width: 100%; text-align: center; margin-bottom: 37px; }
+
+.accordion .accordion__section--current .accordion__head { background: $c-white; color: $c-black; }
+.accordion .accordion__section--current .ico-close { opacity: 1; visibility: visible; }
+.accordion .accordion__section--current .ico-open { opacity: 0; visibility: hidden; }
+
+
+@media(min-width: 768px){
+	.accordion .accordion__body { display: flex !important; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.accordion .accordion__head { padding: 20px 70px 17px 20px; text-align: left; }
+	.accordion .accordion__head-aside { opacity: 1; visibility: visible; }
+}
+
+$breakpoint-mobile-portrait {
+	.accordion .accordion__head { padding: 14px 70px 17px 37px; }
+	.accordion .accordion__body { padding: 21px 0 20px; }
+}
